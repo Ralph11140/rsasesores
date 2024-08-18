@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS ASESORES</title>
+    <style>
+        .iframe-container {
+            width: 100%; /* Ajusta el ancho según tus necesidades */
+            height: 500px; /* Ajusta la altura según tus necesidades */
+            overflow: hidden; /* Oculta cualquier parte del iframe que salga del contenedor */
+            position: relative; /* Necesario para la posición del iframe */
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top:-200PX
+              ; /* Ajusta este valor para ocultar partes de la parte superior de la página */
+            left: 0;
+            width: 100%;
+            height: calc(600px + 100px); /* Debe ser la altura original más el valor de 'top' para compensar */
+        }
+    </style>
+</head>
+<body>
+    <h1>RS ASESORES</h1>
+    <p>Aquí puedes acceder directamente a Turnitin:</p>
+    <div class="iframe-container">
+        <iframe src="https://www.turnitin.com/login_page.asp?lang=en_us" frameborder="0">
+            Tu navegador no soporta iframes.
+        </iframe>
+    </div>
+</body>
+</html>
